@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Forecast</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f6f8;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            color: #080808;
+        }
+
+        .project-card {
+            width: 100%;
+            max-width: 1100px;
+            background: #e9eaed;
+            padding: 25px 45px 50px;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 75px;
+        }
+
+        .project-title {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 35px;
+        }
+
+        .description {
+            font-size: 28px;
+            line-height: 1.55;
+            margin-bottom: 8px;
+        }
+
+        .info {
+            font-size: 28px;
+            line-height: 1.65;
+        }
+
+        .info strong,
+        .description strong {
+            font-weight: 800;
+        }
+
+        .resource {
+            color: #999da4;
+        }
+
+        .buttons {
+            margin-top: 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .btn {
+            width: 100%;
+            min-height: 135px;
+            border: none;
+            border-radius: 100px;
+            background: #6500f5;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            box-shadow: 0 12px 25px rgba(77, 30, 150, 0.16);
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            background: #5700d8;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-submit {
+            background: #9257ed;
+        }
+
+        .btn-submit:hover {
+            background: #8143df;
+        }
+
+        .download-icon {
+            font-size: 45px;
+            line-height: 1;
+        }
+
+        @media (max-width: 600px) {
+            .project-card {
+                padding: 22px 20px 35px;
+            }
+
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 45px;
+            }
+
+            .project-title {
+                font-size: 27px;
+                margin-bottom: 25px;
+            }
+
+            .description,
+            .info {
+                font-size: 19px;
+            }
+
+            .buttons {
+                margin-top: 28px;
+                gap: 20px;
+            }
+
+            .btn {
+                min-height: 85px;
+                font-size: 22px;
+                gap: 15px;
+            }
+
+            .download-icon {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="project-card">
+
+        <h1 class="section-title">INTERMEDIATE Projects:</h1>
+
+        <h2 class="project-title">
+            Task 4 — Blood Donation Forecast
+        </h2>
+
+        <p class="description">
+            <strong>Description:</strong>
+            Use machine learning to predict future blood donations,
+            addressing a critical issue in the healthcare system.
+        </p>
+
+        <p class="info">
+            <strong>Difficulty:</strong> Intermediate
+        </p>
+
+        <p class="info">
+            <strong>Estimated Time:</strong> 4–6 hours
+        </p>
+
+        <p class="info">
+            <strong>Tech Used:</strong> Python, scikit-learn, Pandas
+        </p>
+
+        <p class="info resource">
+            <strong style="color: black;">Resources:</strong>
+            Download – Blood Donation Forecast
+        </p>
+
+        <div class="buttons">
+
+            <button class="btn" onclick="downloadProject()">
+                <span class="download-icon">↓</span>
+                Blood Forecast
+            </button>
+
+            <button class="btn" onclick="markDone()">
+                Mark Done
+            </button>
+
+            <button class="btn btn-submit" onclick="submitProject()">
+                Submit Project
+            </button>
+
+        </div>
+    </div>
+
+    <script>
+        function downloadProject() {
+            alert("Add your Blood Donation Forecast dataset download link here.");
+        }
+
+        function markDone() {
+            alert("Blood Donation Forecast marked as done!");
+        }
+
+        function submitProject() {
+            alert("Please connect your project submission form.");
+        }
+    </script>
+
+</body>
+</html>
